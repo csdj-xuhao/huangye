@@ -8,14 +8,11 @@
 <title>荒野亂鬥｜玩家活動資訊</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 :root {
   --yellow: #ffdf38;
   --purple: #32136a;
-  --dark: #170b31;
   --white: #ffffff;
 }
 
@@ -24,15 +21,12 @@ body {
   font-family: Arial, "Noto Sans TC", sans-serif;
   color: var(--white);
   background:
-    linear-gradient(
-      rgba(19, 8, 43, .77),
-      rgba(19, 8, 43, .94)
-    ),
+    linear-gradient(rgba(19,8,43,.77),rgba(19,8,43,.94)),
     url("background.jpg") center / cover fixed;
 }
 
 .page {
-  width: min(920px, calc(100% - 28px));
+  width: min(920px,calc(100% - 28px));
   margin: auto;
   padding: 22px 0 40px;
 }
@@ -62,7 +56,7 @@ body {
 
 .hero {
   overflow: hidden;
-  border: 2px solid #ffdf38;
+  border: 2px solid var(--yellow);
   border-radius: 20px;
   background: var(--purple);
   box-shadow: 0 12px 35px #0005;
@@ -77,7 +71,7 @@ body {
 .hero-content {
   padding: 25px 20px 28px;
   text-align: center;
-  background: linear-gradient(145deg, #54249a, #251044);
+  background: linear-gradient(145deg,#54249a,#251044);
 }
 
 .eyebrow {
@@ -89,7 +83,7 @@ body {
 
 h1 {
   margin: 12px 0;
-  font-size: clamp(29px, 6vw, 47px);
+  font-size: clamp(29px,6vw,47px);
   font-weight: 1000;
   line-height: 1.25;
   text-shadow: 3px 4px #190a32;
@@ -189,7 +183,7 @@ h1 {
 
 .reward-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 15px;
 }
 
@@ -198,7 +192,7 @@ h1 {
   text-align: center;
   border-radius: 14px;
   border: 1px solid #ffffff20;
-  background: linear-gradient(145deg, #422075, #281344);
+  background: linear-gradient(145deg,#422075,#281344);
 }
 
 .reward-art {
@@ -207,7 +201,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 18px;
-  background: radial-gradient(circle, #6a37a3, #291342);
+  background: radial-gradient(circle,#6a37a3,#291342);
 }
 
 .reward-symbol {
@@ -215,9 +209,7 @@ h1 {
   filter: drop-shadow(0 5px 7px #0005);
 }
 
-.reward-info {
-  padding: 15px;
-}
+.reward-info { padding: 15px; }
 
 .reward-info h3 {
   margin: 0 0 8px;
@@ -295,9 +287,7 @@ h1 {
   font-weight: 800;
 }
 
-.faq-item summary::marker {
-  color: var(--yellow);
-}
+.faq-item summary::marker { color: var(--yellow); }
 
 .faq-answer {
   padding: 0 15px 15px;
@@ -320,40 +310,25 @@ h1 {
   line-height: 1.9;
 }
 
-@media (max-width: 520px) {
+@media (max-width:520px) {
   .page {
     width: calc(100% - 18px);
     padding-top: 13px;
   }
 
-  .logo {
-    font-size: 16px;
-  }
+  .logo { font-size: 16px; }
 
-  .hero-content,
-  .section {
-    padding: 17px;
-  }
+  .hero-content,.section { padding: 17px; }
 
-  .reward-grid {
-    gap: 10px;
-  }
+  .reward-grid { gap: 10px; }
 
-  .reward-art {
-    min-height: 110px;
-  }
+  .reward-art { min-height: 110px; }
 
-  .reward-symbol {
-    font-size: 49px;
-  }
+  .reward-symbol { font-size: 49px; }
 
-  .time-unit {
-    min-width: 57px;
-  }
+  .time-unit { min-width: 57px; }
 
-  .time-unit strong {
-    font-size: 22px;
-  }
+  .time-unit strong { font-size: 22px; }
 }
 </style>
 </head>
@@ -375,16 +350,13 @@ h1 {
 
     <div class="hero-content">
       <div class="eyebrow">LIMITED-TIME EVENT</div>
-
       <h1>玩家活動資訊</h1>
-
       <p class="subtitle">
         查看活動詳情、參與方式及最新消息
       </p>
 
       <div class="countdown-box">
         <div class="countdown-label">距離活動結束</div>
-
         <div class="countdown">
           <div class="time-unit">
             <strong id="days">00</strong>
@@ -406,17 +378,12 @@ h1 {
       </div>
 
       <div class="hero-action">
-       
-<div class="hero-action">
-  <a
-    class="button"
-    href="https://lin.ee/6JXPASj"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    查看活動資訊
-  </a>
-</div>
+        <a
+          class="button"
+          href="https://lin.ee/6JXPASj"
+          target="_blank"
+          rel="noopener noreferrer"
+        >查看活動資訊</a>
       </div>
     </div>
   </section>
@@ -492,13 +459,15 @@ h1 {
     <details class="faq-item">
       <summary>活動什麼時候結束？</summary>
       <div class="faq-answer">
-        請以本頁實際設定的倒數時間及活動公告為準。
+        請以本頁設定的倒數時間及活動公告為準。
       </div>
     </details>
 
     <details class="faq-item">
       <summary>如何確認活動是否真實？</summary>
-      <div class="faq-answer"
+      <div class="faq-answer">
+        請透過遊戲官方網站或官方社群核實活動資訊，
+        切勿提供帳號密碼或驗證碼。
       </div>
     </details>
   </section>
@@ -506,7 +475,8 @@ h1 {
   <section class="section">
     <h2 class="section-title">活動聲明</h2>
     <p class="notice">
-      本頁為玩家活動資訊展示範本。
+      本頁為玩家活動資訊展示範本，並非官方公告。
+      請以遊戲官方發布的資訊為準。
     </p>
   </section>
 
@@ -518,31 +488,32 @@ h1 {
 </main>
 
 <script>
-  // 請將日期改成實際活動結束時間。
-  // 範例：2026 年 10 月 15 日 23:59:59（台灣時間）
-  const endTime = new Date("2026-10-15T23:59:59+08:00").getTime();
+const endTime =
+  new Date("2026-10-15T23:59:59+08:00").getTime();
 
-  function updateCountdown() {
-    const now = Date.now();
-    const remaining = Math.max(0, endTime - now);
+function updateCountdown() {
+  const remaining = Math.max(0, endTime - Date.now());
 
-    const days = Math.floor(remaining / 86400000);
-    const hours = Math.floor((remaining % 86400000) / 3600000);
-    const minutes = Math.floor((remaining % 3600000) / 60000);
-    const seconds = Math.floor((remaining % 60000) / 1000);
+  const days = Math.floor(remaining / 86400000);
+  const hours = Math.floor((remaining % 86400000) / 3600000);
+  const minutes = Math.floor((remaining % 3600000) / 60000);
+  const seconds = Math.floor((remaining % 60000) / 1000);
 
-    document.getElementById("days").textContent =
-      String(days).padStart(2, "0");
-    document.getElementById("hours").textContent =
-      String(hours).padStart(2, "0");
-    document.getElementById("minutes").textContent =
-      String(minutes).padStart(2, "0");
-    document.getElementById("seconds").textContent =
-      String(seconds).padStart(2, "0");
-  }
+  document.getElementById("days").textContent =
+    String(days).padStart(2, "0");
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+  document.getElementById("hours").textContent =
+    String(hours).padStart(2, "0");
+
+  document.getElementById("minutes").textContent =
+    String(minutes).padStart(2, "0");
+
+  document.getElementById("seconds").textContent =
+    String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
 </script>
 
 </body>
